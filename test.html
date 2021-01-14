@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="test.css">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>지도 생성하기</title>
+    
+</head>
+<body>
+<!-- 지도를 표시할 div 입니다 -->
+<div id="map"></div>
+<div id="markerLoader" onclick="markerLoader()"></div>
+<div class="custom_typecontrol radius_border">
+    <span id="btnRoadmap" class="selected_btn" onclick="setMapType('roadmap')">지도</span>
+    <span id="btnSkyview" class="btn" onclick="setMapType('skyview')">스카이뷰</span>
+</div>
+<!-- 지도 확대, 축소 컨트롤 div 입니다 -->
+<div class="custom_zoomcontrol radius_border"> 
+    <span onclick="zoomIn()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png" alt="확대"></span>  
+    <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
+</div>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2ce5738840541113062d608612a0a8c9"></script>
+<script src="test.js" type="text/javascript"></script>
+</body>
+</html>
